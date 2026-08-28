@@ -1,24 +1,27 @@
 <?php
-
-
-function luasLingkaran($jari) : float {
-    $luas = 3.14*$jari*$jari;
+function luasLingkaran(float $jari): float
+{
+    $luas = 3.14 * $jari * $jari;
     return $luas;
 }
-function kelilinglingkaran($jari) : float {
-    $keliling = 2*$jari*3.14;
+function kelilinglingkaran(float $jari): float
+{
+    $keliling = 2 * $jari * 3.14;
     return $keliling;
 }
-function volumebola($jari) : float {
-    $volume = 4/3*3.14*$jari*$jari*$jari;
+function volumebola(float $jari): float
+{
+    $volume = 4 / 3 * 3.14 * $jari * $jari * $jari;
     return $volume;
 }
-function volumetabung($jari, $tinggi) : float {
-    $volume = 3.14*$jari*$jari*$tinggi;
+function volumetabung(float $jari, float $tinggi): float
+{
+    $volume = 3.14 * $jari * $jari * $tinggi;
     return $volume;
 }
-function volumekerucut($jari, $tinggi) : float {
-    $volume = 1/3*3.14*$jari*$jari*$tinggi;
+function volumekerucut(float $jari, float $tinggi): float
+{
+    $volume = 1 / 3 * 3.14 * $jari * $jari * $tinggi;
     return $volume;
 }
 $tinggi = 10;
