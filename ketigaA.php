@@ -2,17 +2,16 @@
 class Lingkaran
 {
     const PHI = 3.14;
+    public float $jari_jari;
 
-
-    public function luas($jari_jari): float
+    public function luas(): float
     {
-        return self::PHI * $jari_jari * $jari_jari;
+        return self::PHI * $this->jari_jari * $this->jari_jari;
     }
 
-
-    public function keliling($jari_jari): float
+    public function keliling(): float
     {
-        return 2 * self::PHI * $jari_jari;
+        return 2 * self::PHI * $this->jari_jari;
     }
 }
 
@@ -20,17 +19,16 @@ class Lingkaran
 class setengahLingkaran
 {
     const PHI = 3.14;
+    public float $jari_jari;
 
-
-    public function luas($jari_jari): float
+    public function luas(): float
     {
-        return (1 / 2) * self::PHI * $jari_jari * $jari_jari;
+        return (1 / 2) * self::PHI * $this->jari_jari * $this->jari_jari;
     }
 
-
-    public function keliling($jari_jari): float
+    public function keliling(): float
     {
-        return self::PHI * $jari_jari;
+        return self::PHI * $this->jari_jari;
     }
 }
 
@@ -38,9 +36,11 @@ class setengahLingkaran
 class Bola
 {
     const PHI = 3.14;
-    public function volume($jari_jari): float
+    public float $jari_jari;
+
+    public function volume(): float
     {
-        return (4 / 3) * self::PHI * pow($jari_jari, 3);
+        return (4 / 3) * self::PHI * pow($this->jari_jari, 3);
     }
 }
 
@@ -48,9 +48,12 @@ class Bola
 class Tabung
 {
     const PHI = 3.14;
-    public function volume($jari_jari, $tinggi): float
+    public float $jari_jari;
+    public float $tinggi;
+
+    public function volume(): float
     {
-        return self::PHI * pow($jari_jari, 2) * $tinggi;
+        return self::PHI * pow($this->jari_jari, 2) * $this->tinggi;
     }
 }
 
@@ -58,15 +61,18 @@ class Tabung
 class Kerucut
 {
     const PHI = 3.14;
-    public function volume($jari_jari, $tinggi): float
+    public float $jari_jari;
+    public float $tinggi;
+
+    public function volume(): float
     {
-        return (1 / 3) * self::PHI * pow($jari_jari, 2) * $tinggi;
+        return (1 / 3) * self::PHI * pow($this->jari_jari, 2) * $this->tinggi;
     }
 }
 
 
 $nasi_rempah = new setengahLingkaran();
-$jari_jari = 4;
+$nasi_rempah->jari_jari = 4;
 
-echo "Luas Nasi Rempah: " . $nasi_rempah->luas($jari_jari) . "\n";
-echo "Keliling Nasi Rempah: " . $nasi_rempah->keliling($jari_jari) . "\n";
+echo "Luas Nasi Rempah: " . $nasi_rempah->luas() . "\n";
+echo "Keliling Nasi Rempah: " . $nasi_rempah->keliling() . "\n";
