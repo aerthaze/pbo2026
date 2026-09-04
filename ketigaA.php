@@ -76,3 +76,4 @@ $nasi_rempah->jari_jari = 4;
 
 echo "Luas Nasi Rempah: " . $nasi_rempah->luas() . "\n";
 echo "Keliling Nasi Rempah: " . $nasi_rempah->keliling() . "\n";
+
