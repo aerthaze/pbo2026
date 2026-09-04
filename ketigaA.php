@@ -67,7 +67,6 @@ class Kerucut
 
 $nasi_rempah = new setengahLingkaran();
 $jari_jari = 4;
-$tinggi = 10;
 
 echo "Luas Nasi Rempah: " . $nasi_rempah->luas($jari_jari) . "\n";
 echo "Keliling Nasi Rempah: " . $nasi_rempah->keliling($jari_jari) . "\n";
