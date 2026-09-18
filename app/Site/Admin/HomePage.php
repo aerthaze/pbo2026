@@ -2,7 +2,7 @@
 namespace App\Site\Admin;
 class HomePage
 {
-    function tampil() : void {
+    public function tampil() : void {
         echo "Halaman depan admin";
     }
 }
