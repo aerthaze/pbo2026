@@ -11,3 +11,4 @@ $dosen1 = new Dosen(101, "Budi Hartono", "08123456789", "Jl. Cendrawasih No. 10"
 
 
 $dosen1->cekIn();
+echo "NIDN Dosen: " . $dosen1->getNidn();
