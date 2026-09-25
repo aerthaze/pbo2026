@@ -1,6 +1,7 @@
 <?php
 
-require_once '../app/Library/Author.php';
-require_once '../app/Library/Book.php';
-require_once '../app/Library/Publisher.php';
+require_once __DIR__ . '/../vendor/autoload.php';
 
+use App\Library\Author;
+use App\Library\Book;
+use App\Library\Publisher;

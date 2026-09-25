@@ -1,10 +1,8 @@
 <?php
 
-require_once '../app/Shapes/Lingkaran.php';
-require_once '../app/Shapes/setengahLingkaran.php';
-require_once '../app/Shapes/Bola.php';
-require_once '../app/Shapes/Tabung.php';
-require_once '../app/Shapes/Kerucut.php';
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use App\Shapes\setengahLingkaran;
 
 $nasi_rempah = new setengahLingkaran(4);
 
