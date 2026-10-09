@@ -14,6 +14,7 @@ $tendik1 = new TenagaKependidikan(201, "Ani Suryani", "0815...", "Jl. Merpati No
 $dosen1->bekerja();
 $tendik1->bekerja();
 $dosen1->hitungTunjanganKinerja();
+$tendik1->ajukanCuti(5);
 
 echo"\n";
 echo "Tunjangan Kinerja Dosen: Rp " . $dosen1->hitungTunjanganKinerja() . "\n";
