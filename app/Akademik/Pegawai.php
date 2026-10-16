@@ -1,4 +1,7 @@
 <?php
+
+namespace App\Akademik;
+
 abstract class Pegawai
 {
     public int $nip;
@@ -22,6 +25,11 @@ abstract class Pegawai
     public function cekIn(): void
     {
         echo $this->nama . " berhasil cek in.<br>";
+    }
+
+    public function getNoHp(): string
+    {
+        return $this->no_hp;
     }
 }
 

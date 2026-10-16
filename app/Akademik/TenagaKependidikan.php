@@ -1,11 +1,6 @@
 <?php
 namespace App\Akademik;
 
-
-use App\Akademik\Pegawai;
-use App\Akademik\PenilaianKinerja;
-use App\Akademik\DapatCuti;
-
 class TenagaKependidikan extends Pegawai implements PenilaianKinerja, DapatCuti
 {
     public int $gaji_pokok;
@@ -39,6 +34,11 @@ class TenagaKependidikan extends Pegawai implements PenilaianKinerja, DapatCuti
     public function ajukanCuti(int $jumlahHari): void
     {
         echo "\n" . $this->nama . " sedang mengajukan cuti selama " . $jumlahHari . " hari";
+    }
+
+    public function getGajiPokok(): int
+    {
+        return $this->gaji_pokok;
     }
 }
 

@@ -4,8 +4,7 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 
-use App\Akademik\Pegawai;
-use App\Akademik\TenagaKepedidikan;
+use App\Akademik\TenagaKependidikan;
 
-$pegawai = new Pegawai(100, "Pegawai Abstrak", "08111234", "Jl. Antah Berantah");
+$pegawai = new TenagaKependidikan(100, "Pegawai Contoh", "08111234", "Jl. Antah Berantah", 3000000);
 $pegawai->cekIn();
